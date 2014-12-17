@@ -20,22 +20,31 @@
         <h3>Edward William Lane's Arabic-English Lexicon - a digital version</h3>
       </header>
       <section>
-	      <p>I'm working on a standalone desktop version of the Lexicon based on the XML sources built by the Perseus project at <a href="http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Arabic">Tufts University.</a></p>
-              <p>You will be able to browse the lexicon, follow cross-references by clicking on the link, search the contents for an Arabic root or head word or do a full text search for both English and Arabic words. To help, It comes with a virtual Arabic keyboard.</p>
+        <h4>12th December 2014</h4>
+        <p>Resolving cross references</p>
+        <p>To quote from Lane's Preface:</p>
+          <em>In order to facilitate the reference, an arrow-head (↓) is inserted to render conspicuous a word explained in a paragraph headed by another word.) Several obvious advantages result from this arrangement; not the least of which is a considerable saving of room.</em>
+          <br/>
+          <p>The <a href="#sources">text</a> contains 36031 cross-references. In the application, Lane's arrow-head becomes a clickable link.
+            At the moment, 26253  of those cross-references are resolved, leaving 9778 'broken' links.
+<br/>
+I'm working on a two-pronged approach: reduce that number to something more respectable and provide a simple method for the user to fix a broken link.
+            <br/>
+            Here's what a broken link looks like:
+            <img align="center" src="images/broken_links.png"/>
 
-              <p>Other features include the ability to add bookmarks, attach notes to entries, copy entries and paste them into you own documents.</p>
-              <p>You can choose your preferred Arabic font, set your own keyboard shortcuts and alter many more configuration settings.</p>
-	      <p>Here's a screenshot to give you an idea. (Click on it for a bigger picture.):</p>
-              <div align="center">
-	      <a href="tarasa.html"><img title="Click to embiggen" src="images/tarasa-50.png" /></a>
-              </div>
+</p>
+          In the third link above, you can see two more problems:
+<ul>
+            <li>The text has been marked up in such a way that the link extends over more than one word.</li>
+            <li>When the link text is followed immediately by more Arabic, the down arrow is shown out of place.</li>
+          </ul>
       </section>
       <section>
-      Go <a href="news.html">here</a> to find out what I'm currently working on and
-      <a href="faq.html">here</a> for more information and screenshots.
-      </section>
+      <a name="sources">Note:</a> By 'text' I mean the XML provided by the Perseus project.
+</section>
       <section>
-        <p>If you are interested in this project you can contact me at:
+        <p>If you have any comments about the above, please contact me at:
         <script language="JavaScript">
  <!--
 
