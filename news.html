@@ -14,11 +14,31 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+    .arabic { font-family : 'Amiri', serif }
+    .xml { margin-left:20px;margin-top:30px;margin-bottom:30px;background-color:#eeeeee }
+  </style>
   <body>
     <div class="wrapper">
       <header class="without-description">
         <h3>Edward William Lane's Arabic-English Lexicon - a digital version</h3>
       </header>
+      <section>
+        <h4>25th December 2014</h4>
+        <p>Tidying the XML</p>
+        <p>The quality of the transcription from the original text to XML is impressive and I can only guess at the amount of work involved. Nevertheless, some errors have crept through - sometimes they're minor typos that have no further effect, but sometimes a mistake in one character can have very a visible outcome. In the screenshot below, the entries for the root <span class="arabic"> نضخ</span> have been added to those for root <span class="arabic">نضح</span>:</p>
+        <br/>
+        <img align="center" src="images/wrong_root.png"></img>
+        <br/><br/>
+        <p>Here's how a root  appears in the XML:</p>
+        <span class="xml">&lt;div2 n="nDH" type="root" org="uniform" sample="complete" part="N" TEIform="div2"&gt;</span>
+        <br/><br/>
+        <p>When the root entry for <span class="arabic"> نضخ</span> was added, it was mistakenly added as nDH (which is the Buckwalter transliteration of <span class="arabic">نضح</span>) instead of nDx. That's all it took.</p>
+
+        <p>My copy of the XML files are kept under version control:  the commit logs tell me that so far I have made 262 changes. I expect there will be more to come.</p>
+
+      </section>
       <section>
         <h4>17th December 2014</h4>
         <p>Resolving cross references</p>
